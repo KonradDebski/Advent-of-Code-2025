@@ -1,10 +1,8 @@
 {
-  "name": "ts-project-template",
-  "version": "1.0.2",
-  "description": "Vite bundler with TypeScript & SASS compile|autoprefix|minimize",
-  "main": "index.html",
+  "name": "advent-of-code-2025",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "author": "DrewnioQ",
   "scripts": {
     "dev": "vite serve --port 3000",
     "build": "tsc && vite build",
@@ -25,6 +23,11 @@
     "prettier": "^3.7.4",
     "sass": "^1.94.2",
     "typescript": "^5.9.3",
-    "vite": "^7.2.6"
+    "vite": "npm:rolldown-vite@7.2.10"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@7.2.10"
+    }
   }
 }
