@@ -1,0 +1,1 @@
+// Tutaj wklej swój prawdziwy input z Advent of Code

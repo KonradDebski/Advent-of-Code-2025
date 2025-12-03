@@ -7,13 +7,15 @@
     "dev": "vite serve --port 3000",
     "build": "tsc && vite build",
     "preview": "vite preview --port 3000",
-    "postbuild": "postcss dist/assets/*.css -u autoprefixer -r --no-map"
+    "postbuild": "postcss dist/assets/*.css -u autoprefixer -r --no-map",
+    "watch": "tsx watch"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "eslint": "^9.39.1",
+    "@types/node": "^24.10.1",
     "@typescript-eslint/eslint-plugin": "^8.48.1",
     "@typescript-eslint/parser": "^8.48.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^9.39.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^10.1.8",
@@ -22,6 +24,7 @@
     "postcss-cli": "^11.0.1",
     "prettier": "^3.7.4",
     "sass": "^1.94.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "npm:rolldown-vite@7.2.10"
   },
