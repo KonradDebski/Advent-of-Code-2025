@@ -7,7 +7,7 @@ console.log("📝 Input:\n")
 console.log(input)
 console.log("========================")
 
-function result(input: string): number | string {
+function result(_input: string): number | string {
   return 0
 }
 

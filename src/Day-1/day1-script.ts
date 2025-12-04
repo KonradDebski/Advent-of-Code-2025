@@ -7,7 +7,7 @@ console.log("📝 Input:\n")
 console.log(input)
 console.log("========================")
 
-function result(input: string): number | string {
+function result(_input: string): number | string {
   return 0
 }
 
@@ -15,5 +15,6 @@ function result(input: string): number | string {
 // Results
 // ====================================
 console.log(`🎄 Advent of Code - Day ${DAY}`)
+
 console.log("========================\n")
 console.log("Result:", result(input))
