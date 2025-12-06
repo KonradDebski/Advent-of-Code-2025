@@ -14,16 +14,21 @@ function result(input: string): number {
     const maxValueInt = parseInt(maxValueStr)
 
     for (let i = minValueInt; i <= maxValueInt; i++) {
-      const currentValueStr = i.toString(10)
-      const regex = /^(\d+?)\1+$/
+      const currentValueStr = i.toString()
+      const currentValueStrLength = currentValueStr.length
+      if (currentValueStrLength % 2 !== 0) continue
 
-      if (regex.test(currentValueStr)) {
-        invalidIDsArr.push(i)
-      }
+      const currentValueStrMiddle = Math.floor(currentValueStrLength / 2)
+      const currentValueFirstHalf = currentValueStr.slice(0, currentValueStrMiddle)
+      const currentValueSecondHalf = currentValueStr.slice(currentValueStrMiddle, currentValueStrLength)
+
+      if (currentValueFirstHalf !== currentValueSecondHalf) continue
+
+      invalidIDsArr.push(i)
     }
   })
 
-  return invalidIDsArr.length ? invalidIDsArr.reduce((sum, currentValue) => sum += currentValue) : 0
+  return invalidIDsArr ? invalidIDsArr.reduce((sum, currentValue) => sum += currentValue) : 0
 }
 
 // ====================================
