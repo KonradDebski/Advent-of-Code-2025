@@ -71,7 +71,6 @@
         "noUnsafeOptionalChaining": "error",
         "noUnusedLabels": "error",
         "noUnusedPrivateClassMembers": "off",
-        "noUnusedVariables": "error",
         "useIsNan": "error",
         "useParseIntRadix": "error",
         "useValidForDirection": "error",
@@ -282,6 +281,11 @@
   ],
   "assist": {
     "enabled": true,
-    "actions": { "source": { "organizeImports": "on" } }
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "fixAll": "off"
+      }
+    }
   }
 }
